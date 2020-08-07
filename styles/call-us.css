@@ -1,0 +1,63 @@
+body{
+  background-color: white;
+  
+}
+header{
+    background-color: #3459B1;
+    color:white;
+    text-align: center;
+    width:100%;
+}
+header h1{
+    padding: 44px;
+}
+header p{
+    padding-bottom: 43px;
+}
+.content{
+    color:#3459B1;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 191px;
+}
+.contact{
+    font-size: 24px;
+    font-weight: 500;
+}
+.contact img{
+    height:36px;
+}
+.contact tr,td{
+    padding:20px;
+}
+.office-hours h1{
+    margin: 20px 0;
+}
+.office-hours h2{
+    font-weight:600;
+    margin: 20px 0;
+}
+.office-hours span{
+    font-weight:300;
+}
+
+
+@media only screen and (max-width : 892px){
+    .content{
+        padding: 15px 47px;
+    }
+    main header p{
+        display:none;
+    }
+    main header{
+        height:132px;
+    }
+    .contact{
+        font-size: 21px;
+        margin: 30px 5%;
+    }
+    .contact img{
+        height:34px;
+    }
+}
