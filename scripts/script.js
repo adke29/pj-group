@@ -1,15 +1,11 @@
-document.querySelector('.img-btn').addEventListener('click', function()
-	{
-		document.querySelector('.cont').classList.toggle('s-signup')
-	}
-);
-document.querySelector('.img-btn2').addEventListener('click', function()
-	{
-		document.querySelector('.cont').classList.toggle('s-signup')
-	}
-);
-document.querySelector('.img-btn3').addEventListener('click', function()
-	{
-		document.querySelector('.cont').classList.toggle('s-signup')
-	}
-);
+function signInUp(){
+		document.querySelector('.cont').classList.toggle('s-signup');
+		let x = document.querySelector('title');
+		if(x.innerHTML == 'Sign Up')
+		{
+			x.innerHTML ='Sign In';
+		}else{
+			x.innerHTML = 'Sign Up';
+		}
+	
+}

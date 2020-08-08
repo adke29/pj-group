@@ -31,7 +31,7 @@
                   <li><img src="./assets/instagram.png"></li>
                 </ul>
               </div>
-              <div class="img-btn2">
+              <div class="img-btn2" onclick="signInUp()">
                 <span class="m-up"><i class="fas fa-arrow-left"></i> Sign Up </span>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                   <h2>Sudah Punya Akun?</h2>
                   <p>Jika Anda Sudah Memiliki Akun, Silahkan Sign In ke Akun Anda!</p>
                 </div>
-                <div class="img-btn">
+                <div class="img-btn" onclick="signInUp()">
                   <span class="m-up">Sign Up</span>
                   <span class="m-in">Sign In</span>
                 </div>
@@ -77,7 +77,7 @@
                 </label>
               </form>
                 <button type="button" class="submit">Sign Up Now</button>
-                <div class="img-btn3">
+                <div class="img-btn3" onclick="signInUp()">
                   <span class="m-in"> Sign In <i class="fas fa-arrow-right"></i> </span>
                 </div>
                 </div>
