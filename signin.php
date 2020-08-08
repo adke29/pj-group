@@ -1,36 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bajingan Sukses</title>
-    <link rel="icon" type="image/png"  href="./assets/logo.png" />
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <?php include 'head.php'?>
+    <title>Sign In</title>
     <link rel="stylesheet" href="./styles/signin.css">
 </head>
 <body>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="check-btn">
-          <i class ="fas fa-bars" ></i>
-      </label>
-      <ul>
-          <li class="logo"><a href="./index.html"><img src="./assets/logo.png" alt="Logo"></a></li>
-          <li class="big-only"><a href="./index.html">Home</a></li>
-          <li class="big-only"><a href="">Daftar Layanan</a></li>
-          <li class="big-only"><a href="./call-us.html">Hubungi Kami</a></li>
-          <li class="big-only"><a href="./terms-and-conditions.html">Ketentuan Layanan</a></li>
-          <li><a href="./signin.html" class="siginin-btn"><span> Sign In</span></a></li>
-      </ul>
-      <ul class="little-only">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="">Daftar Layanan</a></li>
-          <li><a href="./call-us.html">Hubungi Kami</a></li>
-          <li><a href="./terms-and-conditions.html">Ketentuan Layanan</a></li>
-      </ul>
-    </nav>
+    <?php include 'navbar.php'?>
     <main>
         <div class="cont">
             <div class="form sign-in">
