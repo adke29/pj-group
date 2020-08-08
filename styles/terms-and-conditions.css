@@ -5,53 +5,44 @@ body {
 header{
     background:-webkit-linear-gradient(right,#7579ff, #b224ef);
     color:white;
-    text-align: center;
+    text-align: left;
     width:100%;
+  
 }
 header h1{
     padding: 44px;
+    padding-left: 140px;
 }
 header p{
-    padding-bottom: 43px;
+    padding-bottom: 40px;
+    padding-left: 140px;
+    margin-bottom: 20px;
 }
 .content{
     color:#3459B1;  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px 191px;
+    text-align: left;
 }
-.contact{
-    font-size: 24px;
-    font-weight: 500;
+.content h2{
+    padding:30px 150px;
 }
-.contact img{
-    height:36px;
+.content p{
+    padding:0px 150px;
 }
-.contact tr,td{
-    padding:20px;
-}
-.office-hours h1{
-    margin: 20px 0;
-}
-.office-hours h2{
-    font-weight:600;
-    margin: 20px 0;
-}
-.office-hours span{
-    font-weight:300;
-}
+
 
 
 @media only screen and (max-width : 892px){
     .content{
         padding: 15px 47px;
     }
-    main header p{
-        display:none;
+    .content h2{
+        padding:30px 10px;
+    }
+    .content p{
+        padding:0px 10px;
     }
     main header{
-        height:132px;
+        height:100%;
     }
     .contact{
         font-size: 21px;
@@ -59,5 +50,13 @@ header p{
     }
     .contact img{
         height:34px;
+    }
+    header h1{
+        font-size: 23px;
+        padding-left: 35px;
+    }
+    header p{
+        font-size: 15px;
+        padding-left: 35px;
     }
 }
