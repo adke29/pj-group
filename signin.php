@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php include 'navbar.php'?>
+    
+    <script>signInUp();alert('success');</script>
     <main>
         <div class="cont">
             <div class="form sign-in">
@@ -22,7 +24,7 @@
               </label>
               <button class="submit" type="button">Sign In</button>
             </form>
-              <p class="forgot-pass"><a href="./forget.html"> Forgot Password ?</a></p>
+              <p class="forgot-pass"><a href="./forget.php"> Forgot Password ?</a></p>
               <div class="social-media">
                 <ul>
                   <li><img src="./assets/facebook.png"></li>
@@ -52,31 +54,31 @@
                 </div>
               </div>
               <div class="form sign-up">
-                <form action="">
-                <h2>Sign Up</h2>
-                <label>
-                  <span>Nama</span>
-                  <input type="text">
-                </label>
-                <label>
-                  <span>Username</span>
-                  <input type="text">
-                </label>
-                <label>
-                <label>
-                  <span>Email</span>
-                  <input type="email">
-                </label>
-                <label>
-                  <span>Password</span>
-                  <input type="password">
-                </label>
-                <label>
-                  <span>Kode Referal</span>
-                  <input type="text">
-                </label>
-              </form>
-                <button type="button" class="submit">Sign Up Now</button>
+                <form action="signup.php" method="POST">
+                  <h2>Sign Up</h2>
+                  <label>
+                    <span>Nama</span>
+                    <input type="text" name="name">
+                  </label>
+                  <label>
+                    <span>Username</span>
+                    <input type="text" name="username">
+                  </label>
+                  <label>
+                  <label>
+                    <span>Email</span>
+                    <input type="email" name="email">
+                  </label>
+                  <label>
+                    <span>Password</span>
+                    <input type="password" name="password">
+                  </label>
+                  <label>
+                    <span>Kode Referal</span>
+                    <input type="text" name = "ref">
+                  </label>
+                  <button type="submit" class="submit">Sign Up Now</button>
+                </form>
                 <div class="img-btn3" onclick="signInUp()">
                   <span class="m-in"> Sign In <i class="fas fa-arrow-right"></i> </span>
                 </div>
@@ -84,6 +86,12 @@
             </div>
           </div>
         <script type="text/javascript" src="./scripts/script.js"></script>
+        <?php 
+        if(isset($_GET['up'])){
+          echo"<script>signInUp()</script>";
+        }
+    
+    ?>
     </main>
 </body>
 </html>
