@@ -7,8 +7,6 @@
 </head>
 <body>
     <?php include 'navbar.php'?>
-    
-    <script>signInUp();alert('success');</script>
     <main>
         <div class="cont">
             <div class="form sign-in">

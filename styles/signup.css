@@ -11,6 +11,7 @@ header h1{
     text-align:center;
     color: white;
     font-size: 70px;
+    
 }
 .cont h2{
     text-align: center;
@@ -46,3 +47,11 @@ button{
     font-family: 'Nunito', sans-serif;
     background: -webkit-linear-gradient(left, #7579ff, #b224ef);
         }
+
+
+@media only screen and (max-width: 962px){
+    header h1{
+        padding:70px 30px;
+        font-size: 44px;
+    }
+}
