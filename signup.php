@@ -11,12 +11,22 @@
      <header>
         <?php
              if ($_SERVER["REQUEST_METHOD"] == "POST"){
-                include 'conn.php';
+                require 'conn.php';
                 $name = $_POST['name'];
                 $username = $_POST['username'];
                 $email = $_POST['email'];
                 $password = $_POST['password'];
                 $ref = $_POST['ref'];
+                if(empty($name)||empty($username)||empty($email)||empty($password)||empty($ref)){
+                    header("Location: ./signin.php?up=1&n=".empty($name)."&u=".empty($username)."&e=".empty($email)."&p=".empty($password)."&r=".empty($ref));
+                    exit();
+                }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+
+                }
+
+
+
+                //if the data legit
                 $sql = "INSERT INTO customer(name,username,email,password,ref) VALUE ('$name','$username','$email','$password','$ref')";
                 if(mysqli_query($conn, $sql)) {
                     echo "<h1>Succesfully Registered!</h1>";

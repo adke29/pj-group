@@ -58,6 +58,13 @@ color: #505f75;
 text-transform: uppercase;
 }
 
+.error{
+        color:red;
+        font-weight: 400;
+        text-transform: none;
+        float:left;
+}
+
 input{
 display: block;
 width: 100%;

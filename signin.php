@@ -57,23 +57,48 @@
                   <label>
                     <span>Nama</span>
                     <input type="text" name="name">
+                    <?php
+                      if(!empty($_GET['n'])){
+                        echo"<span class='error'>Masukkan Nama</span>";
+                      }
+                    ?>
                   </label>
                   <label>
                     <span>Username</span>
                     <input type="text" name="username">
+                    <?php
+                      if(!empty($_GET['u'])){
+                        echo"<span class='error'>Masukkan Username</span>";
+                      }
+                    ?>
                   </label>
                   <label>
                   <label>
                     <span>Email</span>
                     <input type="email" name="email">
+                    <?php
+                      if(!empty($_GET['e'])){
+                        echo"<span class='error'>Masukkan email</span>";
+                      }
+                    ?>
                   </label>
                   <label>
                     <span>Password</span>
                     <input type="password" name="password">
+                    <?php
+                      if(!empty($_GET['p'])){
+                        echo"<span class='error'>Masukkan password</span>";
+                      }
+                    ?>
                   </label>
                   <label>
                     <span>Kode Referal</span>
                     <input type="text" name = "ref">
+                    <?php
+                      if(!empty($_GET['r'])){
+                        echo"<span class='error'>Masukkan Kode Referal</span>";
+                      }
+                    ?>
                   </label>
                   <button type="submit" class="submit">Sign Up Now</button>
                 </form>
